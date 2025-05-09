@@ -91,6 +91,24 @@ IoT 개발자 WPF 학습리포지토리 2025
     - INotifyPropertyChanged 인터페이스 : 객체내의 어떠한 속성값이 변경되면 상태를 C#에게 알려주는 기능
     - PropertyChangedEventHandler 이벤트 생성
 7. ViewModel폴더 내 MainViewModel 클래스 생성
+    - INotifyPropertyChanged 인터페이스 구현
+    - OnPropertyChanged 이벤트 핸들러 메서드 코딩
+8. MainView.xaml에 ViewModel 연결
+```xml
+ 
+```
+9. MainView.xaml 컨트롤에 바인딩 작업
+    - 전통적인 C#방식
+    ```xml
+
+    ```
+
+    - WPF MVVM 바인딩 방식
+    ```xml
+    
+    ```
+
+    <img src="./image/wpf0004.png" width="600">
 
 ## 2일차
 
