@@ -105,10 +105,27 @@ IoT 개발자 WPF 학습리포지토리 2025
 
     - WPF MVVM 바인딩 방식
     ```xml
-    
+
     ```
 
     <img src="./image/wpf0004.png" width="600">
+### MVVM Framework
+- MVVM 개발자체가 어려움. 초기 개발시 MVVM 템플릿을 만드는데 시간이 많이 소요. 난이도 있음
+- 조금 쉽게 개발하고자 3rd Party에서 개발한 MVVM 프레임워크 사용
+- 종류
+  - `Prism` : MS계열에서 직접 개발. 대규모 앱 개발시 사용. 모듈화잘되어 있음. 커뮤니티 활발
+    - 진입장벽 높음
+  - `Caliburn.Micro` : 경량화된 프레임워크. 쉽게 개발할 수 있음. Xaml 바인딩 생략가능. 커뮤니티 주는추세
+    - MahApps.Metro에서 사용 중
+    - 디버깅이 어려움
+  - `MVVM Light Toolkit` : 가장 가벼운 MVVM 입문용. 쉬운 Command 지원. 개발종료.
+    - 확장성이 떨어짐
+  - `CommunityToolkit.Mvvm` : MS 공식 경량MVVM. 단순,빠름. 커뮤니티등 매우 활발
+    - 모듈기능이 없음
+  - `ReactiveUI` : Rx기반 MVVM. 비동기, 스트림처리 강력. 커뮤니티가 활발.
+
+### Caliburn.Micro
+
 
 ## 2일차
 
