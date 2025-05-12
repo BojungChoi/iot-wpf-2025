@@ -255,7 +255,9 @@ IoT 개발자 WPF 학습리포지토리 2025
 8. BookGenreViewModel DB처리 구현
     <img src="./image/wpf0010.png" width="600">
 
+## 4일차
 
+### DB연결 CRUD 연습(계속)
 
 #### DB연결 CRUD 연습 시 필요사항
 - [ ] NLog로 각 기능 동작시 로그남기기
