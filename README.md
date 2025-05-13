@@ -284,9 +284,7 @@ https://github.com/user-attachments/assets/45ec9423-35ad-4f20-b28e-3bb2159e71d9
 - [x] 여러번 나오는 로직 메서드화
 - [x] NLog로 각 기능 동작시 로그남기기
 - [x] 연결문자열 Common으로 이전
-- [ ] DB쿼리 모델로 이전
-- [ ] 종료
-- [ ] MahApps.Metro 메시지형태로 변경
-- [ ] 삭제여부 메시지박스 추가
-- [ ] 종료 메뉴아이템
+- [x] 종료 메뉴 다이얼로그 MetroUI로 변경
+- [x] MahApps.Metro 메시지형태로 변경
+- [x] 삭제여부 메시지박스 추가
 

@@ -15,9 +15,9 @@ namespace WpfBookRentalShop01
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            var coordinator = DialogCoordinator.Instance;
+            Common.DIALOGCOORDINATOR = DialogCoordinator.Instance;
 
-            var viewModel = new MainViewModel(coordinator);
+            var viewModel = new MainViewModel(Common.DIALOGCOORDINATOR);
             var view = new MainView();
             view.DataContext = viewModel;
             view.ShowDialog();

@@ -46,7 +46,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-
+                
                 <!-- 그룹박스내 UI 컨트롤 -->
                 <TextBox Grid.Row="0" Margin="3"
                          mah:TextBoxHelper.AutoWatermark="True"

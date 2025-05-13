@@ -10,11 +10,8 @@ namespace WpfBookRentalShop01.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-
-        
         // MahApps.Metro 형태 다이얼로그 코디네이터
         private readonly IDialogCoordinator dialogCoordinator;
-
 
         private string _greeting;
 
@@ -45,7 +42,7 @@ namespace WpfBookRentalShop01.ViewModels
             this.dialogCoordinator = coordinator; // 다이얼로그코디네이터 초기화
             Greeting = "BookRentalShop!!";
 
-            Common.LOGGER.Info("책대여점 프로그램 실행!"); // new 해서 생성자 만들필요없음.(static)
+            Common.LOGGER.Info("책대여점 프로그램 실행!");
         }
 
         #region '화면 기능(이벤트)처리'
@@ -56,20 +53,20 @@ namespace WpfBookRentalShop01.ViewModels
             //MessageBox.Show("종료합니다!");
             //await this.dialogCoordinator.ShowMessageAsync(this, "종료합니다!", "메시지");
             var result = await this.dialogCoordinator.ShowMessageAsync(this, "종료확인", "종료하시겠습니까?", MessageDialogStyle.AffirmativeAndNegative);
-            if (result == MessageDialogResult.Affirmative) // OK 누르면
+            if (result == MessageDialogResult.Affirmative) // OK를 누르면
             {
                 Application.Current.Shutdown();
             }
             else
             {
-                // 취소 버튼 클릭 시 아무 작업도 하지 않음
+                return;
             }
         }
 
         [RelayCommand]
         public void ShowBookGenre()
         {
-            var vm = new BookGenreViewModel(this.dialogCoordinator);
+            var vm = new BookGenreViewModel(Common.DIALOGCOORDINATOR);
             var v = new BookGenreView
             {
                 DataContext = vm,
@@ -90,10 +87,35 @@ namespace WpfBookRentalShop01.ViewModels
             };
             CurrentView = v;
             CurrentStatus = "책관리 화면입니다";
-            Common.LOGGER.Info("책관리 실행");
 
+            Common.LOGGER.Info("책관리 실행");
         }
 
+        [RelayCommand]
+        public void ShowMembers()
+        {
+            var vm = new MembersViewModel(Common.DIALOGCOORDINATOR);
+            var v = new MembersView
+            {
+                DataContext = vm,
+            };
+            CurrentView = v;
+            CurrentStatus = "회원관리 화면입니다";
+            Common.LOGGER.Info("회원관리 실행");
+        }
+
+        [RelayCommand]
+        public void ShowRentals()
+        {
+            var vm = new RentalsViewModel(Common.DIALOGCOORDINATOR);
+            var v = new RentalsView
+            {
+                DataContext = vm,
+            };
+            CurrentView = v;
+            CurrentStatus = "대여관리 화면입니다";
+            Common.LOGGER.Info("대여관리 실행");
+        }
         #endregion
     }
 }

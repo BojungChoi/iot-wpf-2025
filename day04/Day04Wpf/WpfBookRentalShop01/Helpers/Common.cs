@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 namespace WpfBookRentalShop01.Helpers
 {
     /// <summary>
-    /// 프로젝트 내에서 같이 쓸 수 있는 공통클래스
+    ///  프로젝트 내에서 같이 쓸 수 있는 공통클래스
     /// </summary>
     public class Common
     {
         // NLog 인스턴스
         public static readonly Logger LOGGER = LogManager.GetCurrentClassLogger();
 
-        // DB 연결 문자열을 한곳에 모아놓음
+        // DB연결문자열을 한군데 저장
         public static readonly string CONNSTR = "Server=localhost;Database=bookrentalshop;Uid=root;Pwd=12345;Charset=utf8;";
 
-        // MahApps.Metro 형태 다이얼로그 코디네이터
-        public static IDialogCoordinator DIALOGCOORDINATOR;
+        // MahApps.Metro 다이얼로그 코디네이터
+        public static  IDialogCoordinator DIALOGCOORDINATOR;
     }
 }

@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\hosinoI.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="icons8-book-64.ico" />
   </ItemGroup>
 
@@ -22,6 +26,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Views\hosinoI.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\MembersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RentalsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\BooksView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

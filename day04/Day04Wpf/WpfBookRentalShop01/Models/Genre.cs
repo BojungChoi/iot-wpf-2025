@@ -4,16 +4,17 @@ namespace WpfBookRentalShop01.Models
 {
     public class Genre : ObservableObject
     {
+        public Genre()
+        {
+        }
+
         private string _division;
         private string _names;
-
-        public string Division
-        {
+        public string Division { 
             get => _division;
-            set => SetProperty(ref _division, value);
+            set => SetProperty(ref _division, value); 
         }
-        public string Names
-        {
+        public string Names { 
             get => _names;
             set => SetProperty(ref _names, value);
         }
