@@ -10,7 +10,10 @@
     d:DesignHeight="458" d:DesignWidth="998"
     Dialog:DialogParticipation.Register="{Binding}">
     <Grid Margin="10">
-        <Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Views/hosinoI.jpg" Stretch="UniformToFill" Opacity="0.9" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
@@ -26,7 +29,7 @@
         <DataGrid Grid.Row="1" Grid.Column="0" Margin="5"
                   AutoGenerateColumns="False" IsReadOnly="True"
                   ItemsSource="{Binding Rentals}"
-                  SelectedItem="{Binding SelectedRental, Mode=TwoWay}">
+                  SelectedItem="{Binding SelectedRental, Mode=TwoWay}" Opacity="0.7">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Idx}" Header="순번" />
                 <DataGridTextColumn Binding="{Binding MemberIdx}" Header="회원번호" Visibility="Hidden" />
