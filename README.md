@@ -342,6 +342,10 @@ https://github.com/user-attachments/assets/45ec9423-35ad-4f20-b28e-3bb2159e71d9
 
 
 
+https://github.com/user-attachments/assets/18f31699-8235-4724-99b1-d58d104a1af2
+
+
+
 ## 6일차
 
 ### MovieFinder 2025 (계속)
