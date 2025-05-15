@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\MovieFinder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="icons8-movie-64.ico" />
   </ItemGroup>
 
@@ -28,6 +32,7 @@
 
   <ItemGroup>
     <Resource Include="No_Picture.png" />
+    <Resource Include="Views\MovieFinder.png" />
     <Resource Include="Views\No_Picture.png" />
   </ItemGroup>
 

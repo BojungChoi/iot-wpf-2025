@@ -30,6 +30,23 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        
+        <!-- 오른쪽상단 로고 영역 -->
+        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" >
+            <Grid.Background>
+                <ImageBrush ImageSource="/Views/MovieFinder.png" Stretch="Uniform">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0" CenterX="0.45" ScaleX="1.15" ScaleY="1.15"/>
+                            <SkewTransform CenterX="0.45" CenterY="0" />
+                            <RotateTransform CenterX="0.45" CenterY="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Grid.Background>
+        </Grid>
+
 
         <!-- 검색 영역 -->
         <Grid Grid.Row="0" Grid.Column="0">
