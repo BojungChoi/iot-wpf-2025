@@ -365,5 +365,9 @@ https://github.com/user-attachments/assets/9677c339-89a1-40a7-9550-7ce3e3bba895
 5. Youtube 예고편 보기
     1. TrailerView, TrailerViewModel
     2. WPF 기본 WebBrowser는 HTML5 기술이 표현안됨. 오류가 많음
-    3. Nuget 패키지 - Cefsharp.WebBrowser 패키지 설치
-    4. CefSharp.Wpf 설치 시 플랫폼 대상을 AnyCPU에서 X64로 변경!!
+    3. NuGet 패키지 - CefSharp.Wpf.NETCore WebBrowser패키지 설치
+    4. CefSharp.Wpf 설치 시 프로젝트 속성>빌드>일반, 플랫폼 대상을 Any CPU에서 x64로 변경!!
+    5. NuGet 패키지 - Google.Apis.YouTube.v3 설치
+
+6. 기타 작업 완료
+7. 결과 화면
