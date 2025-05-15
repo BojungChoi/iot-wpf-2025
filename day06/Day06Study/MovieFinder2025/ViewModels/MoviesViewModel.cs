@@ -12,6 +12,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
 using System.Web;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace MovieFinder2025.ViewModels
@@ -142,6 +143,7 @@ namespace MovieFinder2025.ViewModels
                 sb.Append($"평점 : {currMovie.Vote_average.ToString("F2")}\n\n");
                 sb.Append(currMovie.Overview);
 
+                Common.LOGGER.Info($"MovieItemDoubleClick : {currMovie.Title}");
                 await this.dialogCoordinator.ShowMessageAsync(this, currMovie.Title, sb.ToString());
             }
 
@@ -205,6 +207,7 @@ namespace MovieFinder2025.ViewModels
                 if (ex.Message.ToUpper().Contains("DUPLICATE ENTRY"))
                 {
                     await this.dialogCoordinator.ShowMessageAsync(this, "즐겨찾기추가", "이미 추가된 즐겨찾기입니다.");
+                    Common.LOGGER.Warn($"즐겨찾기 추가 실패 : {SelectedMovieItem.Title} / 이미 추가된 항목입니다.");
                 }
                 else
                 {
@@ -324,6 +327,24 @@ namespace MovieFinder2025.ViewModels
         public async Task ViewMoviesTrailer()
         {
             //await this.dialogCoordinator.ShowMessageAsync(this, "예고편", "예고편 기능은 준비중입니다.");
+            if (SelectedMovieItem == null)
+            {
+                await this.dialogCoordinator.ShowMessageAsync(this, "예고편", "예고편을 볼 영화를 선택하세요.");
+                return;
+            }
+            
+            var movieTitle = SelectedMovieItem.Title;
+
+            var viewModel = new TrailerViewModel(movieTitle ,Common.DIALOGCOORDINATOR);
+
+            var view = new Views.TrailerView
+            {
+                DataContext = viewModel
+            };
+            
+            view.Owner = Application.Current.MainWindow;
+            view.ShowDialog();
+
         }
 
     }
