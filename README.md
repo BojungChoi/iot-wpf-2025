@@ -374,6 +374,19 @@ https://github.com/user-attachments/assets/9677c339-89a1-40a7-9550-7ce3e3bba895
 
 https://github.com/user-attachments/assets/6c70365a-8079-43da-8521-5af52a39f16d
 
+## 7 일차
+### 부산 광역시 부산맛집 정보앱
+1. [데이터 포털](https://data.go.kr) OpenAI
+2. WPF 프로젝트 생성
+3. NuGet 패키지 라이브러리 설치
+    - CommunityToolkit.Mvvm 
+    - MahApps.Metro / MahApps.Metro.IconPacks
+    - 
+4. MVVM 초기화
+
+
+
+
 
 
 
