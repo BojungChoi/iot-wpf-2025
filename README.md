@@ -464,6 +464,10 @@ https://github.com/user-attachments/assets/9677c339-89a1-40a7-9550-7ce3e3bba895
 
     <img src="./image/wpf0025.png" width="650">
     
+
+    https://github.com/user-attachments/assets/bff4028c-27ce-40bc-a5d7-79bf20406cd6
+
+
     
 ## 9일차 
 
