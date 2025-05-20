@@ -504,6 +504,10 @@ https://github.com/user-attachments/assets/bff4028c-27ce-40bc-a5d7-79bf20406cd6
 
 
 
+https://github.com/user-attachments/assets/af5cfae8-b948-441b-8c4f-7a15fe7da779
+
+
+
 ## 10일차
 
 ### 스마트홈 연동 모니터링앱 (계속)
