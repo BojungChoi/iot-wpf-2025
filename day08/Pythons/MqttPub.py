@@ -10,8 +10,7 @@ import random
 import time
 
 PUB_ID = 'IOT57' # 본인 아이피 마지막 주소
-# BROKER  = '210.119.12.57' # 내 IP
-BROKER  = '210.119.12.58' # 내 IP
+BROKER  = '210.119.12.57' # 내 IP
 
 PORT = 1883
 TOPIC = 'smarthome/57/topic' # publish/subscribe 에서 사용할 토픽
@@ -42,7 +41,7 @@ try:
         currtime = dt.datetime.now()
         selected = random.choice(COLORS)
         COUNT += 1
-        client.publish(TOPIC, payload = f' Emulate from{PUB_ID}[{COUNT}] : {selected} / {currtime}', qos = 1)
+        client.publish(TOPIC, payload = f'Emulate from{PUB_ID}[{COUNT}] : {selected} / {currtime}', qos = 1)
         time.sleep(2)
 
 
