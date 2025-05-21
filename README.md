@@ -513,5 +513,7 @@ https://github.com/user-attachments/assets/af5cfae8-b948-441b-8c4f-7a15fe7da779
 ### 스마트홈 연동 모니터링앱 (계속)
 
 #### 스마트홈 기기 실제 IoT센서데이터 모니터링앱
+- 9일차 작성한 MQTT Subscribe 앱
+
 
 #### 스마트홈 WPF 실시간 시각화
